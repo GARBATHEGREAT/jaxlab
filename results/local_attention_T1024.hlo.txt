@@ -1,0 +1,212 @@
+HloModule jit__lambda, is_scheduled=true, entry_computation_layout={(f32[1024,4,64]{2,1,0}, f32[1024,4,64]{2,1,0}, f32[1024,4,64]{2,1,0})->f32[1024,4,64]{2,1,0}}, allow_spmd_sharding_propagation_to_parameters={true,true,true}, allow_spmd_sharding_propagation_to_output={true}
+
+FileNames
+1 "C:\\Users\\hp\\AppData\\Local\\Temp\\claude\\c84cdce3dd09bc2c\\9c2d41cb-e197-4ade-ba5c-450ae8a86c58\\scratchpad\\jax-tpu-lab\\bench\\run_bench.py"
+2 "C:\\Users\\hp\\AppData\\Local\\Temp\\claude\\c84cdce3dd09bc2c\\9c2d41cb-e197-4ade-ba5c-450ae8a86c58\\scratchpad\\jax-tpu-lab\\jaxlab\\attention.py"
+
+FunctionNames
+1 "<module>"
+2 "main"
+3 "bench_attention"
+4 "hlo_fusions"
+5 "bench_attention.<locals>.<lambda>"
+6 "local_attention"
+
+FileLocations
+1 {file_name_id=1 function_name_id=1 line=142 end_line=142 column=4 end_column=10}
+2 {file_name_id=1 function_name_id=2 line=135 end_line=135 column=24 end_column=65}
+3 {file_name_id=1 function_name_id=3 line=70 end_line=70 column=22 end_column=87}
+4 {file_name_id=1 function_name_id=4 line=50 end_line=50 column=15 end_column=39}
+5 {file_name_id=1 function_name_id=5 line=70 end_line=70 column=50 end_column=77}
+6 {file_name_id=2 function_name_id=6 line=49 end_line=49 column=14 end_column=45}
+7 {file_name_id=2 function_name_id=6 line=47 end_line=47 column=47 end_column=58}
+8 {file_name_id=2 function_name_id=6 line=44 end_line=44 column=33 end_column=44}
+9 {file_name_id=2 function_name_id=6 line=40 end_line=40 column=13 end_column=80}
+10 {file_name_id=2 function_name_id=6 line=34 end_line=34 column=9 end_column=36}
+11 {file_name_id=2 function_name_id=6 line=35 end_line=35 column=9 end_column=36}
+12 {file_name_id=2 function_name_id=6 line=36 end_line=36 column=9 end_column=36}
+13 {file_name_id=2 function_name_id=6 line=38 end_line=38 column=67 end_column=74}
+14 {file_name_id=2 function_name_id=6 line=38 end_line=38 column=26 end_column=79}
+15 {file_name_id=2 function_name_id=6 line=38 end_line=38 column=9 end_column=93}
+16 {file_name_id=2 function_name_id=6 line=39 end_line=39 column=67 end_column=74}
+17 {file_name_id=2 function_name_id=6 line=39 end_line=39 column=26 end_column=79}
+18 {file_name_id=2 function_name_id=6 line=39 end_line=39 column=9 end_column=93}
+19 {file_name_id=2 function_name_id=6 line=42 end_line=42 column=9 end_column=27}
+20 {file_name_id=2 function_name_id=6 line=43 end_line=43 column=9 end_column=31}
+21 {file_name_id=2 function_name_id=6 line=44 end_line=44 column=15 end_column=22}
+22 {file_name_id=2 function_name_id=6 line=44 end_line=44 column=27 end_column=44}
+23 {file_name_id=2 function_name_id=6 line=44 end_line=44 column=14 end_column=45}
+24 {file_name_id=2 function_name_id=6 line=46 end_line=46 column=18 end_column=52}
+25 {file_name_id=2 function_name_id=6 line=47 end_line=47 column=14 end_column=27}
+26 {file_name_id=2 function_name_id=6 line=47 end_line=47 column=46 end_column=65}
+27 {file_name_id=2 function_name_id=6 line=47 end_line=47 column=32 end_column=65}
+28 {file_name_id=2 function_name_id=6 line=47 end_line=47 column=30 end_column=66}
+29 {file_name_id=2 function_name_id=6 line=48 end_line=48 column=23 end_column=39}
+30 {file_name_id=2 function_name_id=6 line=48 end_line=48 column=13 end_column=58}
+31 {file_name_id=2 function_name_id=6 line=50 end_line=50 column=10 end_column=52}
+32 {file_name_id=2 function_name_id=6 line=51 end_line=51 column=11 end_column=31}
+
+StackFrames
+1 {file_location_id=1 parent_frame_id=1}
+2 {file_location_id=2 parent_frame_id=2}
+3 {file_location_id=3 parent_frame_id=3}
+4 {file_location_id=4 parent_frame_id=4}
+5 {file_location_id=5 parent_frame_id=5}
+6 {file_location_id=6 parent_frame_id=6}
+7 {file_location_id=7 parent_frame_id=6}
+8 {file_location_id=8 parent_frame_id=6}
+9 {file_location_id=9 parent_frame_id=6}
+10 {file_location_id=10 parent_frame_id=6}
+11 {file_location_id=11 parent_frame_id=6}
+12 {file_location_id=12 parent_frame_id=6}
+13 {file_location_id=13 parent_frame_id=6}
+14 {file_location_id=14 parent_frame_id=6}
+15 {file_location_id=15 parent_frame_id=6}
+16 {file_location_id=16 parent_frame_id=6}
+17 {file_location_id=17 parent_frame_id=6}
+18 {file_location_id=18 parent_frame_id=6}
+19 {file_location_id=19 parent_frame_id=6}
+20 {file_location_id=20 parent_frame_id=6}
+21 {file_location_id=21 parent_frame_id=6}
+22 {file_location_id=22 parent_frame_id=6}
+23 {file_location_id=23 parent_frame_id=6}
+24 {file_location_id=24 parent_frame_id=6}
+25 {file_location_id=25 parent_frame_id=6}
+26 {file_location_id=26 parent_frame_id=6}
+27 {file_location_id=27 parent_frame_id=6}
+28 {file_location_id=28 parent_frame_id=6}
+29 {file_location_id=29 parent_frame_id=6}
+30 {file_location_id=30 parent_frame_id=6}
+31 {file_location_id=31 parent_frame_id=6}
+32 {file_location_id=32 parent_frame_id=6}
+
+
+%region_1.3 (reduce_sum.3: f32[], reduce_sum.4: f32[]) -> f32[] {
+  %reduce_sum.3 = f32[] parameter(0), metadata={op_name="reduce_sum"}
+  %reduce_sum.4 = f32[] parameter(1), metadata={op_name="reduce_sum"}
+  ROOT %reduce_sum.5 = f32[] add(%reduce_sum.3, %reduce_sum.4), metadata={op_name="jit(<lambda>)/reduce_sum" stack_frame_id=6}
+}
+
+%region_0.2 (reduce_max.3: f32[], reduce_max.4: f32[]) -> f32[] {
+  %reduce_max.3 = f32[] parameter(0), metadata={op_name="reduce_max"}
+  %reduce_max.4 = f32[] parameter(1), metadata={op_name="reduce_max"}
+  ROOT %reduce_max.5 = f32[] maximum(%reduce_max.3, %reduce_max.4), metadata={op_name="jit(<lambda>)/reduce_max" stack_frame_id=6}
+}
+
+%fused_computation (param_0: f32[8,4,64,256], param_1.5: f32[], param_2.8: f32[8,4,128,256], param_3.7: f32[]) -> f32[8,4,64,128] {
+  %param_0 = f32[8,4,64,256]{3,2,1,0} parameter(0)
+  %param_2.8 = f32[8,4,128,256]{3,2,1,0} parameter(2)
+  %param_3.7 = f32[] parameter(3)
+  %reduce_max.0 = f32[8,4,128]{2,1,0} reduce(%param_2.8, %param_3.7), dimensions={3}, to_apply=%region_0.2, metadata={op_name="jit(<lambda>)/reduce_max" stack_frame_id=6}
+  %sub.1 = f32[8,4,128,256]{3,2,1,0} broadcast(%reduce_max.0), dimensions={0,1,2}, metadata={op_name="jit(<lambda>)/sub" stack_frame_id=6}
+  %sub.0 = f32[8,4,128,256]{3,2,1,0} subtract(%param_2.8, %sub.1), metadata={op_name="jit(<lambda>)/sub" stack_frame_id=6}
+  %exp.0 = f32[8,4,128,256]{3,2,1,0} exponential(%sub.0), metadata={op_name="jit(<lambda>)/exp" stack_frame_id=6}
+  %constant.3 = f32[] constant(1), metadata={op_name="jit(<lambda>)/div" stack_frame_id=6}
+  %broadcast.13 = f32[8,4,128]{2,1,0} broadcast(%constant.3), dimensions={}, metadata={op_name="jit(<lambda>)/div" stack_frame_id=6}
+  %param_1.5 = f32[] parameter(1)
+  %reduce_sum.2 = f32[8,4,128]{2,1,0} reduce(%exp.0, %param_1.5), dimensions={3}, to_apply=%region_1.3, metadata={op_name="jit(<lambda>)/reduce_sum" stack_frame_id=6}
+  %divide.3 = f32[8,4,128]{2,1,0} divide(%broadcast.13, %reduce_sum.2), metadata={op_name="jit(<lambda>)/div" stack_frame_id=6}
+  %broadcast.12 = f32[8,4,128,256]{3,2,1,0} broadcast(%divide.3), dimensions={0,1,2}, metadata={op_name="jit(<lambda>)/div" stack_frame_id=6}
+  %multiply.4 = f32[8,4,128,256]{3,2,1,0} multiply(%exp.0, %broadcast.12), metadata={op_name="jit(<lambda>)/div" stack_frame_id=6}
+  ROOT %dot.3 = f32[8,4,64,128]{3,2,1,0} dot(%param_0, %multiply.4), lhs_batch_dims={0,1}, lhs_contracting_dims={3}, rhs_batch_dims={0,1}, rhs_contracting_dims={3}, metadata={op_name="jit(<lambda>)/bhts,bshd->bthd/dot_general" stack_frame_id=31}
+}
+
+%fused_computation.2 (param_0.3: f32[8,4,128,64], param_1.6: f32[8,4,64,256]) -> f32[8,4,128,256] {
+  %param_0.3 = f32[8,4,128,64]{3,2,1,0} parameter(0)
+  %param_1.6 = f32[8,4,64,256]{3,2,1,0} parameter(1)
+  ROOT %dot.4 = f32[8,4,128,256]{3,2,1,0} dot(%param_0.3, %param_1.6), lhs_batch_dims={0,1}, lhs_contracting_dims={3}, rhs_batch_dims={0,1}, rhs_contracting_dims={2}, metadata={op_name="jit(<lambda>)/bthd,bshd->bhts/dot_general" stack_frame_id=9}
+}
+
+%fused_computation.5 (param_0.8: f32[8,4,64,128]) -> f32[1024,4,64] {
+  %param_0.8 = f32[8,4,64,128]{3,2,1,0} parameter(0)
+  %transpose.5 = f32[8,128,4,64]{1,3,2,0} transpose(%param_0.8), dimensions={0,3,1,2}, metadata={op_name="jit(<lambda>)/bhts,bshd->bthd/transpose" stack_frame_id=31}
+  %copy.4 = f32[8,128,4,64]{3,2,1,0} copy(%transpose.5), metadata={op_name="jit(<lambda>)/bhts,bshd->bthd/transpose" stack_frame_id=31}
+  ROOT %bitcast.10 = f32[1024,4,64]{2,1,0} bitcast(%copy.4), metadata={op_name="jit(<lambda>)/bhts,bshd->bthd/transpose" stack_frame_id=31}
+}
+
+%fused_computation.6 (param_0.10: f32[8,4,128,256]) -> f32[8,4,128,256] {
+  %iota.17 = s32[128,256]{1,0} iota(), iota_dimension=1, metadata={op_name="jit(<lambda>)/gt" stack_frame_id=21}
+  %iota.16 = s32[128,256]{1,0} iota(), iota_dimension=0, metadata={op_name="jit(<lambda>)/gt" stack_frame_id=21}
+  %gt.0 = pred[128,256]{1,0} compare(%iota.17, %iota.16), direction=GT, metadata={op_name="jit(<lambda>)/gt" stack_frame_id=21}
+  %iota.15 = s32[128,256]{1,0} iota(), iota_dimension=1, metadata={op_name="jit(<lambda>)/le" stack_frame_id=22}
+  %iota.14 = s32[128,1]{1,0} iota(), iota_dimension=0, metadata={op_name="jit(<lambda>)/iota" stack_frame_id=19}
+  %constant.7 = s32[] constant(128)
+  %add.1 = s32[128,1]{1,0} broadcast(%constant.7), dimensions={}, metadata={op_name="jit(<lambda>)/add" stack_frame_id=8}
+  %add.0 = s32[128,1]{1,0} add(%iota.14, %add.1), metadata={op_name="jit(<lambda>)/add" stack_frame_id=8}
+  %bitcast.14 = s32[128]{0} bitcast(%add.0), metadata={op_name="jit(<lambda>)/add" stack_frame_id=8}
+  %le.1 = s32[128,256]{1,0} broadcast(%bitcast.14), dimensions={0}, metadata={op_name="jit(<lambda>)/le" stack_frame_id=22}
+  %le.0 = pred[128,256]{1,0} compare(%iota.15, %le.1), direction=LE, metadata={op_name="jit(<lambda>)/le" stack_frame_id=22}
+  %and.6 = pred[128,256]{1,0} and(%gt.0, %le.0), metadata={op_name="jit(<lambda>)/and" stack_frame_id=23}
+  %and.5 = pred[8,128,256]{2,1,0} broadcast(%and.6), dimensions={1,2}, metadata={op_name="jit(<lambda>)/and" stack_frame_id=25}
+  %iota.13 = s32[8,1,1]{2,1,0} iota(), iota_dimension=0, metadata={op_name="jit(<lambda>)/iota" stack_frame_id=24}
+  %constant.6 = s32[] constant(0)
+  %broadcast.16 = s32[8,1,1]{2,1,0} broadcast(%constant.6), dimensions={}
+  %eq.0 = pred[8,1,1]{2,1,0} compare(%iota.13, %broadcast.16), direction=EQ, metadata={op_name="jit(<lambda>)/eq" stack_frame_id=24}
+  %bitcast.13 = pred[8]{0} bitcast(%eq.0), metadata={op_name="jit(<lambda>)/eq" stack_frame_id=24}
+  %and.4 = pred[8,1,256]{2,1,0} broadcast(%bitcast.13), dimensions={0}, metadata={op_name="jit(<lambda>)/and" stack_frame_id=27}
+  %iota.12 = s32[1,256]{1,0} iota(), iota_dimension=1, metadata={op_name="jit(<lambda>)/iota" stack_frame_id=20}
+  %lt.1 = s32[1,256]{1,0} broadcast(%constant.7), dimensions={}, metadata={op_name="jit(<lambda>)/lt" stack_frame_id=7}
+  %lt.0 = pred[1,256]{1,0} compare(%iota.12, %lt.1), direction=LT, metadata={op_name="jit(<lambda>)/lt" stack_frame_id=7}
+  %bitcast.12 = pred[256]{0} bitcast(%lt.0), metadata={op_name="jit(<lambda>)/lt" stack_frame_id=7}
+  %and.3 = pred[8,1,256]{2,1,0} broadcast(%bitcast.12), dimensions={2}, metadata={op_name="jit(<lambda>)/and" stack_frame_id=27}
+  %and.2 = pred[8,1,256]{2,1,0} and(%and.4, %and.3), metadata={op_name="jit(<lambda>)/and" stack_frame_id=27}
+  %not.0 = pred[8,1,256]{2,1,0} not(%and.2), metadata={op_name="jit(<lambda>)/not" stack_frame_id=28}
+  %bitcast.11 = pred[8,256]{1,0} bitcast(%not.0), metadata={op_name="jit(<lambda>)/not" stack_frame_id=28}
+  %and.1 = pred[8,128,256]{2,1,0} broadcast(%bitcast.11), dimensions={0,2}, metadata={op_name="jit(<lambda>)/and" stack_frame_id=25}
+  %and.0 = pred[8,128,256]{2,1,0} and(%and.5, %and.1), metadata={op_name="jit(<lambda>)/and" stack_frame_id=25}
+  %broadcast_in_dim.5 = pred[8,4,128,256]{3,2,1,0} broadcast(%and.0), dimensions={0,2,3}, metadata={op_name="jit(<lambda>)/jit(_where)/broadcast_in_dim" stack_frame_id=30}
+  %param_0.10 = f32[8,4,128,256]{3,2,1,0} parameter(0)
+  %constant.5 = f32[] constant(0.125)
+  %broadcast.15 = f32[8,4,128,256]{3,2,1,0} broadcast(%constant.5), dimensions={}, metadata={op_name="jit(<lambda>)/div" stack_frame_id=9}
+  %multiply.6 = f32[8,4,128,256]{3,2,1,0} multiply(%param_0.10, %broadcast.15), metadata={op_name="jit(<lambda>)/div" stack_frame_id=9}
+  %constant.4 = f32[] constant(-inf)
+  %broadcast_in_dim.4 = f32[8,4,128,256]{3,2,1,0} broadcast(%constant.4), dimensions={}, metadata={op_name="jit(<lambda>)/jit(_where)/broadcast_in_dim" stack_frame_id=30}
+  ROOT %select_n.2 = f32[8,4,128,256]{3,2,1,0} select(%broadcast_in_dim.5, %multiply.6, %broadcast_in_dim.4), metadata={op_name="jit(<lambda>)/jit(_where)/select_n" stack_frame_id=30}
+}
+
+%fused_computation.7 (param_0.14: f32[1024,4,64]) -> f32[8,4,64,256] {
+  %param_0.14 = f32[1024,4,64]{2,1,0} parameter(0)
+  %slice.4 = f32[896,4,64]{2,1,0} slice(%param_0.14), slice={[0:896], [0:4], [0:64]}, metadata={op_name="jit(<lambda>)/slice" stack_frame_id=13}
+  %bitcast.16 = f32[7,128,4,64]{3,2,1,0} bitcast(%slice.4), metadata={op_name="jit(<lambda>)/slice" stack_frame_id=13}
+  %constant.16 = f32[] constant(0)
+  %pad.2 = f32[8,128,4,64]{3,2,1,0} pad(%bitcast.16, %constant.16), padding=1_0x0_0x0_0x0_0, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=14}
+  %bitcast.15 = f32[8,128,4,64]{3,2,1,0} bitcast(%param_0.14), metadata={op_name="k"}
+  %concatenate.0 = f32[8,256,4,64]{3,2,1,0} concatenate(%pad.2, %bitcast.15), dimensions={1}, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=15}
+  %transpose.6 = f32[8,4,64,256]{2,1,3,0} transpose(%concatenate.0), dimensions={0,2,3,1}, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=15}
+  ROOT %copy.5 = f32[8,4,64,256]{3,2,1,0} copy(%transpose.6), metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=15}
+}
+
+%fused_computation.8 (param_0.17: f32[1024,4,64]) -> f32[8,4,128,64] {
+  %param_0.17 = f32[1024,4,64]{2,1,0} parameter(0)
+  %bitcast.17 = f32[8,128,4,64]{3,2,1,0} bitcast(%param_0.17), metadata={op_name="q"}
+  %transpose.7 = f32[8,4,128,64]{3,1,2,0} transpose(%bitcast.17), dimensions={0,2,1,3}, metadata={op_name="jit(<lambda>)/reshape" stack_frame_id=10}
+  ROOT %copy.6 = f32[8,4,128,64]{3,2,1,0} copy(%transpose.7), metadata={op_name="jit(<lambda>)/reshape" stack_frame_id=10}
+}
+
+%fused_computation.9 (param_0.21: f32[1024,4,64]) -> f32[8,4,64,256] {
+  %param_0.21 = f32[1024,4,64]{2,1,0} parameter(0)
+  %slice.5 = f32[896,4,64]{2,1,0} slice(%param_0.21), slice={[0:896], [0:4], [0:64]}, metadata={op_name="jit(<lambda>)/slice" stack_frame_id=16}
+  %bitcast.19 = f32[7,128,4,64]{3,2,1,0} bitcast(%slice.5), metadata={op_name="jit(<lambda>)/slice" stack_frame_id=16}
+  %constant.17 = f32[] constant(0)
+  %pad.3 = f32[8,128,4,64]{3,2,1,0} pad(%bitcast.19, %constant.17), padding=1_0x0_0x0_0x0_0, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=17}
+  %bitcast.18 = f32[8,128,4,64]{3,2,1,0} bitcast(%param_0.21), metadata={op_name="v"}
+  %concatenate.1 = f32[8,256,4,64]{3,2,1,0} concatenate(%pad.3, %bitcast.18), dimensions={1}, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=18}
+  %transpose.8 = f32[8,4,64,256]{2,1,3,0} transpose(%concatenate.1), dimensions={0,2,3,1}, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=18}
+  ROOT %copy.7 = f32[8,4,64,256]{3,2,1,0} copy(%transpose.8), metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=18}
+}
+
+ENTRY %main.4 (q.1: f32[1024,4,64], k.1: f32[1024,4,64], v.1: f32[1024,4,64]) -> f32[1024,4,64] {
+  %q.1 = f32[1024,4,64]{2,1,0} parameter(0), metadata={op_name="q"}
+  %k.1 = f32[1024,4,64]{2,1,0} parameter(1), metadata={op_name="k"}
+  %v.1 = f32[1024,4,64]{2,1,0} parameter(2), metadata={op_name="v"}
+  %constant.13 = f32[] constant(0)
+  %constant.14 = f32[] constant(-inf)
+  %transpose_copy_fusion.1 = f32[8,4,128,64]{3,2,1,0} fusion(%q.1), kind=kLoop, calls=%fused_computation.8, metadata={op_name="jit(<lambda>)/reshape" stack_frame_id=10}, backend_config={"outer_dimension_partitions":["5"]}
+  %transpose_copy_fusion = f32[8,4,64,256]{3,2,1,0} fusion(%k.1), kind=kLoop, calls=%fused_computation.7, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=15}, backend_config={"outer_dimension_partitions":["5"]}
+  %transpose_copy_fusion.2 = f32[8,4,64,256]{3,2,1,0} fusion(%v.1), kind=kLoop, calls=%fused_computation.9, metadata={op_name="jit(<lambda>)/concatenate" stack_frame_id=18}, backend_config={"outer_dimension_partitions":["5"]}
+  %ynn_fusion.2 = f32[8,4,128,256]{3,2,1,0} fusion(%transpose_copy_fusion.1, %transpose_copy_fusion), kind=kCustom, calls=%fused_computation.2, metadata={op_name="jit(<lambda>)/bthd,bshd->bhts/dot_general" stack_frame_id=9}, backend_config={"fusion_config":{"kind":"__ynn_fusion"},"outer_dimension_partitions":[]}
+  %broadcast_select_fusion = f32[8,4,128,256]{3,2,1,0} fusion(%ynn_fusion.2), kind=kLoop, calls=%fused_computation.6, metadata={op_name="jit(<lambda>)/jit(_where)/select_n" stack_frame_id=30}, backend_config={"outer_dimension_partitions":["5"]}
+  %ynn_fusion = f32[8,4,64,128]{3,2,1,0} fusion(%transpose_copy_fusion.2, %constant.13, %broadcast_select_fusion, %constant.14), kind=kCustom, calls=%fused_computation, metadata={op_name="jit(<lambda>)/bhts,bshd->bthd/dot_general" stack_frame_id=31}, backend_config={"fusion_config":{"kind":"__ynn_fusion"},"outer_dimension_partitions":[]}
+  ROOT %copy_bitcast_fusion = f32[1024,4,64]{2,1,0} fusion(%ynn_fusion), kind=kLoop, calls=%fused_computation.5, metadata={op_name="jit(<lambda>)/bhts,bshd->bthd/transpose" stack_frame_id=31}, backend_config={"outer_dimension_partitions":["5"]}
+}
+

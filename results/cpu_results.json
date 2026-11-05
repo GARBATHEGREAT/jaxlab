@@ -1,0 +1,129 @@
+{
+  "env": {
+    "jax": "0.12.0.1",
+    "python": "3.12.10",
+    "machine": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "device": "CPU"
+  },
+  "attention": {
+    "heads": 4,
+    "head_dim": 64,
+    "window": 128,
+    "rows": [
+      {
+        "T": 512,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "full": {
+          "first_call_ms": 15.880399965681136,
+          "median_ms": 14.704099972732365,
+          "min_ms": 10.929199983365834,
+          "gflops": 0.275511808,
+          "mbytes": 44.072964
+        },
+        "local": {
+          "first_call_ms": 15.511900070123374,
+          "median_ms": 16.065499978139997,
+          "min_ms": 14.57010000012815,
+          "gflops": 0.137593216,
+          "mbytes": 28.082184
+        }
+      },
+      {
+        "T": 1024,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "full": {
+          "first_call_ms": 37.80469996854663,
+          "median_ms": 21.023200009949505,
+          "min_ms": 19.559800042770803,
+          "gflops": 1.102050304,
+          "mbytes": 79.691776
+        },
+        "local": {
+          "first_call_ms": 25.359699968248606,
+          "median_ms": 18.4548000106588,
+          "min_ms": 14.809100073762238,
+          "gflops": 0.275087744,
+          "mbytes": 35.389448
+        },
+        "local_fusions": 7
+      },
+      {
+        "T": 2048,
+        "max_abs_diff": 3.2782554626464844e-07,
+        "full": {
+          "first_call_ms": 119.81319996993989,
+          "median_ms": 75.95940004102886,
+          "min_ms": 73.22669995483011,
+          "gflops": 4.40820736,
+          "mbytes": 293.60128
+        },
+        "local": {
+          "first_call_ms": 26.07329993043095,
+          "median_ms": 23.802299983799458,
+          "min_ms": 19.742100033909082,
+          "gflops": 0.5500768,
+          "mbytes": 71.041032
+        }
+      },
+      {
+        "T": 4096,
+        "max_abs_diff": 2.682209014892578e-07,
+        "full": {
+          "first_call_ms": 364.79749996215105,
+          "median_ms": 300.388399977237,
+          "min_ms": 293.98860002402216,
+          "gflops": 17.632841728,
+          "mbytes": 1124.073472
+        },
+        "local": {
+          "first_call_ms": 23.808599915355444,
+          "median_ms": 22.709000040777028,
+          "min_ms": 21.868999931029975,
+          "gflops": 1.100054912,
+          "mbytes": 142.344192
+        }
+      }
+    ]
+  },
+  "streaming": {
+    "frames": 16384,
+    "channels": 64,
+    "kernel": 5,
+    "rows": [
+      {
+        "mode": "offline (whole signal)",
+        "first_call_ms": 427.25179996341467,
+        "median_ms": 9.343999903649092,
+        "min_ms": 7.615800015628338
+      },
+      {
+        "mode": "streaming, one scan, chunk=16",
+        "max_abs_diff": 1.9073486328125e-06,
+        "first_call_ms": 163.15430006943643,
+        "median_ms": 165.1398999383673,
+        "min_ms": 135.68369997665286
+      },
+      {
+        "mode": "streaming, one scan, chunk=128",
+        "max_abs_diff": 4.76837158203125e-06,
+        "first_call_ms": 68.48140002693981,
+        "median_ms": 42.82999993301928,
+        "min_ms": 32.092200010083616
+      },
+      {
+        "mode": "streaming, one scan, chunk=1024",
+        "max_abs_diff": 1.9073486328125e-06,
+        "first_call_ms": 49.21879991889,
+        "median_ms": 24.64660000987351,
+        "min_ms": 21.758300019428134
+      },
+      {
+        "mode": "streaming, Python loop, chunk=128",
+        "max_abs_diff": 4.76837158203125e-06,
+        "first_call_ms": 95.38610000163317,
+        "median_ms": 50.85940007120371,
+        "min_ms": 47.60349995922297
+      }
+    ]
+  }
+}
